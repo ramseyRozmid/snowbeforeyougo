@@ -25,6 +25,6 @@ app.get('/weather/:lat/:lng', function(req, res) {
     })
 })
 
-app.listen(1337, function() {
-  console.log('The server is up and running on localhost:1337')
+app.listen(process.env.PORT, () => {
+    console.log(`The magic is going down at ${process.env.PORT}`)
 })

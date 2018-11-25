@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel='icon' href='img/logo/logo.png' type='image/x-icon'/ >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Doppio+One|Archivo" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/default/assets/images/flags.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/flag.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <title>Snow Before You Go</title>
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="index.html"><img src="img/logo/logo.png"/>Snow Before You Go</a>
+    <ul class="main-nav">
+      <li><a href="#">Snow Report</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Code</a></li>
+    </ul>
+  </header>
+
+  <div class="title">
+    <h1>The #1 snow report website for Ikon passholders</h1>
+  </div>
+
+  <div class="country-dropdown">
+    <div class="ui fluid search selection dropdown">
+      <input type="hidden" name="country">
+      <i class="dropdown icon"></i>
+      <div class="default text">Select Country</div>
+      <div class="menu">
+      <div class="item" data-value="us"><i class="us flag"></i>United States</div>
+        <div class="item" data-value="ca"><i class="ca flag"></i>Canada</div>
+        <div class="item" data-value="cl"><i class="cl flag"></i>Chile</div>
+        <div class="item" data-value="au"><i class="au flag"></i>Australia</div>
+        <div class="item" data-value="jp"><i class="jp flag"></i>Japan</div>
+      </div>
+    </div>
+  </div>
+
+<div class="region-dropdown">
+  <select class="ui search dropdown">
+    <option value="">Select Region</option>
+    <option value="usa-west">West</option>
+    <option value="usa-pac-nw">Pacific NW</option>
+    <option value="usa-rockies">Rockies</option>
+    <option value="usa-midwest">Midwest</option>
+    <option value="usa-east">East</option>
+    <option value="ca-west">West</option>
+    <option value="ca-east">East</option>
+    <option value="chile">All</option>
+    <option value="japan">All</option>
+    <option value="australia">All</option>
+  </select>
+</div>
+
+<!-- /////////////// East Mountain Section ///////// -->
+<div class="east-div">
+  <div class="mt-tile" id='killington'>
+    <!-- Killington Tile-->
+    <div class="top-half-of-tile">
+      <div class="temp">
+        <div class="current">0 °F
+        </div>
+      </div>
+      <img src="img/mountain-tile-imgs/killington-tile.jpg"/>
+    </div>
+    <div class="tile-content">
+      <img class="mt-logo" src="img/mountain-logos/killington-logo.png" alt="Killington Logo">
+      <h1 class="mountain-name">Killington</h1>
+      <h2 class="sub_title">The "Beast of the East"</h2>
+      <p class="description">Killington Mountain Resort is the largest ski area in the eastern U.S., and has the largest vertical drop in New England at 3,050 feet.</p>
+      <div class="sub-stats"><span class="trails"><i class="fas fa-route"></i> 831 Trails</span><span class="acreage"><i class="fas fa-mountain"></i> 2000 Acres </span></div>
+    </div>
+  </div>
+
+  <div class="mt-tile" id='stratton'>
+    <!-- Stratton Tile-->
+    <div class="top-half-of-tile">
+      <div class="temp">
+        <div class="current">0 °F
+        </div>
+      </div>
+      <img src="img/mountain-tile-imgs/stratton-tile.jpeg"/>
+    </div>
+    <div class="tile-content">
+      <img class="mt-logo" src="img/mountain-logos/stratton-logo.gif" alt="Stratton Logo">
+      <h1 class="mountain-name">Stratton</h1>
+      <h2 class="sub_title">"Find your true north"</h2>
+      <p class="description">With 97 trails, top rated terrain parks, and a network of glades for all levels, Stratton Mountain is where you want to ski.</p>
+      <div class="sub-stats"><span class="trails"><i class="fas fa-route"></i> 97 Trails</span><span class="acreage"><i class="fas fa-mountain"></i> 670 Acres </span></div>
+    </div>
+  </div>
+
+  <div class="mt-tile" id='sugarbush'>
+    <!-- Sugarbush Tile-->
+    <div class="top-half-of-tile">
+      <div class="temp">
+        <div class="current">0 °F
+        </div>
+      </div>
+      <img src="img/mountain-tile-imgs/sugarbush-tile.jpg"/>
+    </div>
+    <div class="tile-content">
+      <img class="mt-logo" src="img/mountain-logos/sugarbush-logo.png" alt="Sugarbush Logo">
+      <h1 class="mountain-name">Sugarbush</h1>
+      <h2 class="sub_title">"Be Better Here"</h2>
+      <p class="description">With two mountain areas separated by the Slide Brook Basin. It is one of the largest ski resorts in New England.</p>
+      <div class="sub-stats"><span class="trails"><i class="fas fa-route"></i> 111 Trails</span><span class="acreage"><i class="fas fa-mountain"></i> 578 Acres </span></div>
+    </div>
+  </div>
+</div>
+
+  <div class="west-div">
+    <div class="mt-tile" id='mammoth'>
+      <!-- Mammoth Tile-->
+      <div class="top-half-of-tile">
+        <div class="temp">
+          <div class="current">0 °F
+          </div>
+        </div>
+        <img src="img/mountain-tile-imgs/mammoth-tile.jpg"/>
+      </div>
+      <div class="tile-content">
+        <img class="mt-logo" src="img/mountain-logos/mammoth-logo.png" alt="Mammoth Logo">
+        <h1 class="mountain-name">Mammoth</h1>
+        <h2 class="sub_title">Top of the Sierra</h2>
+        <p class="description">With an 11,053 foot summit, Mammoth has the highest lift-accessable terrain in California. Plus, legendary snow conditions.</p>
+        <div class="sub-stats"><span class="trails"><i class="fas fa-route"></i> 150 Trails</span><span class="acreage"><i class="fas fa-mountain"></i> 3500 Acres </span></div>
+      </div>
+    </div>
+
+    <a class="squaw_popup_open" href="#squaw_popup">
+    <div class="mt-tile" id='squaw'>
+      <!-- Squaw Tile-->
+      <div class="top-half-of-tile">
+        <div class="temp">
+          <div class="current">0 °F
+          </div>
+        </div>
+        <img src="img/mountain-tile-imgs/squaw-tile.png"/>
+      </div>
+      <div class="tile-content">
+        <img class="mt-logo" src="img/mountain-logos/squaw-logo.png" alt="Stratton Logo">
+        <h1 class="mountain-name">Squaw-Alpine</h1>
+        <h2 class="sub_title">"Tahoe's Finest"</h2>
+        <p class="description">Two mountains to choose from, one destination. Squaw's spirit of adventure makes it one of America’s greatest ski resorts. </p>
+        <div class="sub-stats"><span class="trails"><i class="fas fa-route"></i> 97 Trails</span><span class="acreage"><i class="fas fa-mountain"></i> 670 Acres </span></div>
+      </div>
+    </div>
+    </a>
+
+    <a class="initialism my_popup_open btn btn-success" href="#my_popup">
+    <div class="mt-tile" id='june'>
+      <!-- June Mountain Tile-->
+      <div class="top-half-of-tile">
+        <div class="temp">
+          <div class="current">0 °F
+          </div>
+        </div>
+        <img src="img/mountain-tile-imgs/june-tile.jpg"/>
+      </div>
+      <div class="tile-content">
+        <img class="mt-logo" src="img/mountain-logos/june-logo.png" alt="June Logo">
+        <h1 class="mountain-name">June Mountain</h1>
+        <h2 class="sub_title">7 lifts, family fun!</h2>
+        <p class="description">Enjoy California's best family-friendly ski resort. June Mountain Ski Area offers world-class skiing with a local mountain feel.</p>
+        <div class="sub-stats"><span class="trails"><i class="fas fa-route"></i> 41 Trails</span><span class="acreage"><i class="fas fa-mountain"></i> 1500 Acres </span></div>
+      </div>
+    </div>
+    </a>
+
+  </div>
+
+
+  <!-- June Mountain Popup Content -->
+  <div class="tile-popup" id="my_popup">
+
+    <div class="popup-header">
+      <!-- <h2>June Mountain</h2> -->
+      <img src="img/mountain-logos/june-logo.png" alt="June Logo">
+    </div>
+    <h3>The Weather Forecast:</h3>
+    <p class='june-popup-temp'>Here is some paragraph content</p>
+
+    <!-- Add an optional button to close the popup -->
+    <button class="my_popup_close">Close</button>
+
+  </div>
+
+  <!-- Squaw Popup Content -->
+  <div class="tile-popup" id="squaw_popup">
+
+    <h2>Squaw Valley Alpine Meadows</h2>
+    <h3>Here is some H2 content</h3>
+    <p>Here is some paragraph content</p>
+    <img src="img/mountain-tile-imgs/june-tile.jpg"/>
+
+    <!-- Add an optional button to close the popup -->
+    <button class="my_popup_close">Close</button>
+
+  </div>
+
+  <figure class="icons">
+  	<canvas id="clear-day" width="64" height="64"></canvas>
+  	<canvas id="clear-night" width="64" height="64"></canvas>
+  	<canvas id="partly-cloudy-day" width="64" height="64"></canvas>
+  	<canvas id="partly-cloudy-night" width="64" height="64"></canvas>
+  	<canvas id="cloudy" width="64" height="64"></canvas>
+  	<canvas id="rain" width="64" height="64"></canvas>
+  	<canvas id="sleet" width="64" height="64"></canvas>
+  	<canvas id="snow" width="64" height="64"></canvas>
+  	<canvas id="wind" width="64" height="64"></canvas>
+  	<canvas id="fog" width="64" height="64"></canvas>
+  </figure>
+
+<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+
+
+<footer>
+
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Includes jQuery Popup Overlay CDN -->
+
+  <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+  <!-- Includes jQuery Loading Overlay CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
+
+  <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+  <script type="text/javascript" src="js/skycons.js"></script>
+
+  <script type="text/javascript" src='js/loading-overlay.js'></script>
+  <script type="text/javascript" src='js/darksky-true.js'></script>
+
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.js'></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.js"></script>
+  <script>$('.ui.dropdown').dropdown()</script>
+  <!-- <script src="ui-dropdown-master/dropdown.js"></script>
+  <script src="ui-dropdown-master/index.js"></script>
+  <script src="ui-dropdown-master/package.js"></script> -->
+
+</body>
+</html>

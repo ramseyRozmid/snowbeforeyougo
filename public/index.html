@@ -47,11 +47,11 @@
 <div class="region-dropdown">
   <select class="ui search dropdown">
     <option value="">Select Region</option>
-    <option value="usa-west">West</option>
-    <option value="usa-pac-nw">Pacific NW</option>
-    <option value="usa-rockies">Rockies</option>
-    <option value="usa-midwest">Midwest</option>
-    <option value="usa-east">East</option>
+    <option value="us-west">West</option>
+    <option value="us-pac-nw">Pacific NW</option>
+    <option value="us-rockies">Rockies</option>
+    <option value="us-midwest">Midwest</option>
+    <option value="us-east">East</option>
     <option value="ca-west">West</option>
     <option value="ca-east">East</option>
     <option value="chile">All</option>
@@ -117,8 +117,10 @@
   </div>
 </div>
 
-  <div class="west-div">
-    <div class="mt-tile" id='mammoth'>
+<div class="west-div">
+
+  <a class="initialism mammoth_popup_open btn btn-success" href="#mammoth_popup">
+    <div class="mt-tile us" id='mammoth'>
       <!-- Mammoth Tile-->
       <div class="top-half-of-tile">
         <div class="temp">
@@ -135,9 +137,75 @@
         <div class="sub-stats"><span class="trails"><i class="fas fa-route"></i> 150 Trails</span><span class="acreage"><i class="fas fa-mountain"></i> 3500 Acres </span></div>
       </div>
     </div>
+  </a>
 
-    <a class="squaw_popup_open" href="#squaw_popup">
-    <div class="mt-tile" id='squaw'>
+    <!-- Mammoth Popup Content -->
+    <div class="tile-popup" id="mammoth_popup">
+
+      <div class="popup-header">
+        <!-- <h2>Mammoth Mountain</h2> -->
+        <img src="img/mountain-logos/mammoth-logo.png" alt="Mammoth Logo">
+      </div>
+
+      <h3>Current Weather</h3>
+      <div class="icon">
+        <canvas id="mammoth-weather-icon" width="64" height="64"></canvas>
+      </div>
+      <p class="tile-summary">Summary: <span class='mammoth-popup-summary'>Error Getting Summary</span></p>
+      <div class="weather-data">
+        <div class="left-half-of-popup">
+        <p>Temperature: <span class='mammoth-popup-temp'>Error Getting Temp</span></p>
+        <p>Wind Speed: <span class='mammoth-popup-windSpeed'>Error Getting Wind Speed</span></p>
+        </div>
+
+        <div class="right-half-of-popup">
+        <p>Feels Like Temp: <span class='mammoth-popup-apparentTemperature'>Error Getting Feels Like</span></p>
+        <p>Wind Gusts up to: <span class='mammoth-popup-windGust'>Error Getting Gust Speed</span></p>
+        </div>
+      </div>
+
+      <h3>Weather in the next 48 hours</h3>
+      <div class="icon">
+        <canvas id="mammoth-weather-hourly-icon" width="64" height="64"></canvas>
+      </div>
+      <p class="tile-summary">Summary: <span class='mammoth-popup-hourly-summary'>Error Getting Summary</span></p>
+      <div class="weather-data">
+        <div class="left-half-of-popup">
+        <p>Average Temperature: <span class='mammoth-popup-hourly-temp'>Error Getting Temp</span></p>
+        <p>Average Wind Speed: <span class='mammoth-popup-hourly-windSpeed'>Error Getting Wind Speed</span></p>
+        </div>
+
+        <div class="right-half-of-popup">
+        <p>Average Feels Like Temp: <span class='mammoth-popup-hourly-apparentTemperature'>Error Getting Temp</span></p>
+        <p>Average Wind Gusts: <span class='mammoth-popup-hourly-windGust'>Error Getting Gust Speed</span></p>
+        </div>
+      </div>
+
+      <h3>Weather this Week</h3>
+      <div class="icon">
+        <canvas id="mammoth-weather-daily-icon" width="64" height="64"></canvas>
+      </div>
+      <p class="tile-summary">Summary: <span class='mammoth-popup-daily-summary' class='break'>Error Getting Summary</span></p>
+      <div class="weather-data-last">
+        <div class="left-half-of-popup">
+        <p>Weekly Low Temperature: <span class='mammoth-popup-daily-temperatureLow'>Error Getting Temp</span></p>
+        <p>Weekly Low Feels Like Temp: <span class='mammoth-popup-daily-apparentTemperatureLow'>Error Getting Temp</span></p>
+        </div>
+
+        <div class="right-half-of-popup">
+        <p>Weekly High Temperature: <span class='mammoth-popup-daily-temperatureHigh'>Error Getting Temp</span></p>
+        <p>Weekly High Feels Like Temp: <span class='mammoth-popup-daily-apparentTemperatureHigh'>Error Getting Temp</span></p>
+        </div>
+      </div>
+
+      <!-- Add an optional button to close the popup -->
+      <button class="mammoth_popup_close">Close</button>
+
+    </div>
+
+
+    <a class="initialism squaw_popup_open btn btn-success" href="#squaw_popup">
+    <div class="mt-tile us" id='squaw'>
       <!-- Squaw Tile-->
       <div class="top-half-of-tile">
         <div class="temp">
@@ -156,8 +224,72 @@
     </div>
     </a>
 
+    <!-- Squaw Popup Content -->
+    <div class="tile-popup" id="squaw_popup">
+
+      <div class="popup-header">
+        <!-- <h2>Squaw Mountain</h2> -->
+        <img src="img/mountain-logos/squaw-logo.png" alt="squaw Logo">
+      </div>
+
+      <h3>Current Weather</h3>
+      <div class="icon">
+        <canvas id="squaw-weather-icon" width="64" height="64"></canvas>
+      </div>
+      <p class="tile-summary">Summary: <span class='squaw-popup-summary'>Error Getting Summary</span></p>
+      <div class="weather-data">
+        <div class="left-half-of-popup">
+        <p>Temperature: <span class='squaw-popup-temp'>Error Getting Temp</span></p>
+        <p>Wind Speed: <span class='squaw-popup-windSpeed'>Error Getting Wind Speed</span></p>
+        </div>
+
+        <div class="right-half-of-popup">
+        <p>Feels Like Temp: <span class='squaw-popup-apparentTemperature'>Error Getting Feels Like</span></p>
+        <p>Wind Gusts up to: <span class='squaw-popup-windGust'>Error Getting Gust Speed</span></p>
+        </div>
+      </div>
+
+      <h3>Weather in the next 48 hours</h3>
+      <div class="icon">
+        <canvas id="squaw-weather-hourly-icon" width="64" height="64"></canvas>
+      </div>
+      <p class="tile-summary">Summary: <span class='squaw-popup-hourly-summary'>Error Getting Summary</span></p>
+      <div class="weather-data">
+        <div class="left-half-of-popup">
+        <p>Average Temperature: <span class='squaw-popup-hourly-temp'>Error Getting Temp</span></p>
+        <p>Average Wind Speed: <span class='squaw-popup-hourly-windSpeed'>Error Getting Wind Speed</span></p>
+        </div>
+
+        <div class="right-half-of-popup">
+        <p>Average Feels Like Temp: <span class='squaw-popup-hourly-apparentTemperature'>Error Getting Temp</span></p>
+        <p>Average Wind Gusts: <span class='squaw-popup-hourly-windGust'>Error Getting Gust Speed</span></p>
+        </div>
+      </div>
+
+      <h3>Weather this Week</h3>
+      <div class="icon">
+        <canvas id="squaw-weather-daily-icon" width="64" height="64"></canvas>
+      </div>
+      <p class="tile-summary">Summary: <span class='squaw-popup-daily-summary' class='break'>Error Getting Summary</span></p>
+      <div class="weather-data-last">
+        <div class="left-half-of-popup">
+        <p>Weekly Low Temperature: <span class='squaw-popup-daily-temperatureLow'>Error Getting Temp</span></p>
+        <p>Weekly Low Feels Like Temp: <span class='squaw-popup-daily-apparentTemperatureLow'>Error Getting Temp</span></p>
+        </div>
+
+        <div class="right-half-of-popup">
+        <p>Weekly High Temperature: <span class='squaw-popup-daily-temperatureHigh'>Error Getting Temp</span></p>
+        <p>Weekly High Feels Like Temp: <span class='squaw-popup-daily-apparentTemperatureHigh'>Error Getting Temp</span></p>
+        </div>
+      </div>
+
+      <!-- Add an optional button to close the popup -->
+      <button class="squaw_popup_close">Close</button>
+
+    </div>
+
     <a class="initialism my_popup_open btn btn-success" href="#my_popup">
-    <div class="mt-tile" id='june'>
+    <div class="mt-tile us" id='june'>
       <!-- June Mountain Tile-->
       <div class="top-half-of-tile">
         <div class="temp">
@@ -176,9 +308,6 @@
     </div>
     </a>
 
-  </div>
-
-
   <!-- June Mountain Popup Content -->
   <div class="tile-popup" id="my_popup">
 
@@ -186,29 +315,67 @@
       <!-- <h2>June Mountain</h2> -->
       <img src="img/mountain-logos/june-logo.png" alt="June Logo">
     </div>
-    <h3>The Weather Forecast:</h3>
-    <p class='june-popup-temp'>Here is some paragraph content</p>
+
+    <h3>Current Weather</h3>
+    <div class="icon">
+      <canvas id="june-weather-icon" width="64" height="64"></canvas>
+    </div>
+    <p class="tile-summary">Summary: <span class='june-popup-summary'>Error Getting Summary</span></p>
+    <div class="weather-data">
+      <div class="left-half-of-popup">
+      <p>Temperature: <span class='june-popup-temp'>Error Getting Temp</span></p>
+      <p>Wind Speed: <span class='june-popup-windSpeed'>Error Getting Wind Speed</span></p>
+      </div>
+
+      <div class="right-half-of-popup">
+      <p>Feels Like Temp: <span class='june-popup-apparentTemperature'>Error Getting Feels Like</span></p>
+      <p>Wind Gusts up to: <span class='june-popup-windGust'>Error Getting Gust Speed</span></p>
+      </div>
+    </div>
+
+    <h3>Weather in the next 48 hours</h3>
+    <div class="icon">
+      <canvas id="june-weather-hourly-icon" width="64" height="64"></canvas>
+    </div>
+    <p class="tile-summary">Summary: <span class='june-popup-hourly-summary'>Error Getting Summary</span></p>
+    <div class="weather-data">
+      <div class="left-half-of-popup">
+      <p>Average Temperature: <span class='june-popup-hourly-temp'>Error Getting Temp</span></p>
+      <p>Average Wind Speed: <span class='june-popup-hourly-windSpeed'>Error Getting Wind Speed</span></p>
+      </div>
+
+      <div class="right-half-of-popup">
+      <p>Average Feels Like Temp: <span class='june-popup-hourly-apparentTemperature'>Error Getting Temp</span></p>
+      <p>Average Wind Gusts: <span class='june-popup-hourly-windGust'>Error Getting Gust Speed</span></p>
+      </div>
+    </div>
+
+    <h3>Weather this Week</h3>
+    <div class="icon">
+      <canvas id="june-weather-daily-icon" width="64" height="64"></canvas>
+    </div>
+    <p class="tile-summary">Summary: <span class='june-popup-daily-summary' class='break'>Error Getting Summary</span></p>
+    <div class="weather-data-last">
+      <div class="left-half-of-popup">
+      <p>Weekly Low Temperature: <span class='june-popup-daily-temperatureLow'>Error Getting Temp</span></p>
+      <p>Weekly Low Feels Like Temp: <span class='june-popup-daily-apparentTemperatureLow'>Error Getting Temp</span></p>
+      </div>
+
+      <div class="right-half-of-popup">
+      <p>Weekly High Temperature: <span class='june-popup-daily-temperatureHigh'>Error Getting Temp</span></p>
+      <p>Weekly High Feels Like Temp: <span class='june-popup-daily-apparentTemperatureHigh'>Error Getting Temp</span></p>
+      </div>
+    </div>
 
     <!-- Add an optional button to close the popup -->
     <button class="my_popup_close">Close</button>
 
   </div>
 
-  <!-- Squaw Popup Content -->
-  <div class="tile-popup" id="squaw_popup">
-
-    <h2>Squaw Valley Alpine Meadows</h2>
-    <h3>Here is some H2 content</h3>
-    <p>Here is some paragraph content</p>
-    <img src="img/mountain-tile-imgs/june-tile.jpg"/>
-
-    <!-- Add an optional button to close the popup -->
-    <button class="my_popup_close">Close</button>
-
-  </div>
+</div>
 
   <figure class="icons">
-  	<canvas id="clear-day" width="64" height="64"></canvas>
+  	<canvas id="test" width="64" height="64"></canvas>
   	<canvas id="clear-night" width="64" height="64"></canvas>
   	<canvas id="partly-cloudy-day" width="64" height="64"></canvas>
   	<canvas id="partly-cloudy-night" width="64" height="64"></canvas>

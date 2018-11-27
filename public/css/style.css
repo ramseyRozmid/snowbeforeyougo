@@ -295,6 +295,90 @@ figure {
 	height: 150px;
 }
 
+.about-title {
+	padding-top: 70px;
+	text-align: center;
+}
+
+.about-title img {
+	width: 50%;
+	border: 1px grey solid;
+	border-radius: 2px;
+	margin-bottom: 40px;
+}
+
+.co-developers {
+	display: flex;
+	justify-content: space-around;
+}
+
+.co-developers img{
+	width: 300px;
+	height: 300px;
+	margin: 0 40px;
+	border-radius: 50%;
+	border: 1px grey solid;
+}
+
+#code-title {
+	margin-top: 75px !important;
+}
+
+.code-sections {
+	font-size: 42px;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+.code-sections h2, .code-p, .code-p-list {
+	font-family: 'Share Tech Mono', monospace;
+}
+
+.code-p-list {
+	font-family: 'Share Tech Mono', monospace;
+	margin-top: -20px;
+}
+
+.code-flexbox {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.code-flexbox img, .code-p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#code-style {
+	margin-top: -20px;
+	margin-left: 10px;
+}
+
+.sw-img {
+	width: 150px !important;
+	height: 100% !important;
+	border: none !important;
+	margin: 0 10px;
+}
+
+.sw-img-horizontal {
+	width: 200px !important;
+	height: 100% !important;
+	border: none !important;
+	margin: 0 10px;
+}
+
+#last-section {
+	border-bottom: 1px grey solid;
+}
+
+.code-roadmap {
+	font-family: 'Roboto', sans-serif;
+	font-size: 42px;
+}
+
 /* .mountain-tile {
   width: 250px;
   height: 250px;

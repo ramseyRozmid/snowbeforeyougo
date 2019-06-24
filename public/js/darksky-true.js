@@ -155,3 +155,4 @@
 
       $('#my_popup').popup();
       $('#squaw_popup').popup();
+      $('#mammoth_popup').popup();

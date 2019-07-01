@@ -1,5 +1,6 @@
 const express = require('express')
 const axios = require('axios')
+const MongoClient = require('mongodb').MongoClient;
 
 const app = express()
 
@@ -28,3 +29,11 @@ app.get('/weather/:lat/:lng', function(req, res) {
 app.listen(process.env.PORT, () => {
     console.log(`The magic is going down at ${process.env.PORT}`)
 })
+
+const uri = "mongodb+srv://ramsey_rozmid:2KRSL6qQlCjG}Kkl@snowdb-83p6l.gcp.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});

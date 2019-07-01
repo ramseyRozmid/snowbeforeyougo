@@ -30,8 +30,6 @@ app.listen(process.env.PORT, () => {
     console.log(`The magic is going down at ${process.env.PORT}`)
 })
 
-console.dir(req.ip)
-
 const uri = "mongodb+srv://ramsey_rozmid:2KRSL6qQlCjG}Kkl@snowdb-83p6l.gcp.mongodb.net/test?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true });
 client.connect(err => {
